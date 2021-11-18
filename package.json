@@ -1,5 +1,5 @@
 {
-  "name": "joplin-plugin-markdown-it-container",
+  "name": "joplin-plugin-container-with-classes",
   "version": "1.0.0",
   "scripts": {
     "dist": "webpack --joplin-plugin-config buildMain && webpack --joplin-plugin-config buildExtraScripts && webpack --joplin-plugin-config createArchive",
