@@ -1,24 +1,46 @@
-# Joplin Plugin
+# Container with Classes
 
-This is a template to create a new Joplin plugin.
+Plugin for creating block-level containers with classes for Joplin notes, it is based on [markdown-it-container](https://github.com/markdown-it/markdown-it-container) with some changes.
 
-The main two files you will want to look at are:
+```
+::: classname1 classname2 classname3
+**Bold Text**
+:::
+```
 
-- `/src/index.ts`, which contains the entry point for the plugin source code.
-- `/src/manifest.json`, which is the plugin manifest. It contains information such as the plugin a name, version, etc.
+which will be rendered as follow:
+```
+<div class="classname1 classname2 classname3">
+  <strong>Bold Text</strong>
+</div>
+```
 
-## Building the plugin
+For nested div the parent need to have more ":" than chils:
+```
+:::::: parentclass
 
-The plugin is built using Webpack, which creates the compiled code in `/dist`. A JPL archive will also be created at the root, which can use to distribute the plugin.
+Parent text
 
-To build the plugin, simply run `npm run dist`.
+::: childclass
+**Bold Text**
+:::
 
-The project is setup to use TypeScript, although you can change the configuration to use plain JavaScript.
+::::::
+```
 
-## Updating the plugin framework
+**Why do you want to use this plugin instead of directly write html tag?**
+Because, you can't write markdown syntax within html. Using this plugin markdown text will be rendered as usual.
 
-To update the plugin framework, run `npm run update`.
+![Examples](https://github.com/hieuthi/joplin-plugin-container-with-classes/docs/preview.png)
 
-In general this command tries to do the right thing - in particular it's going to merge the changes in package.json and .gitignore instead of overwriting. It will also leave "/src" as well as README.md untouched.
+There is no pre-defined class, you have to define them within the note or in `userstyle.css` yourself. 
+You can copy the content of [examples.md](https://github.com/hieuthi/joplin-plugin-container-with-classes/docs/examples.md) to joplin to see some simple examples. It includes:
 
-The file that may cause problem is "webpack.config.js" because it's going to be overwritten. For that reason, if you want to change it, consider creating a separate JavaScript file and include it in webpack.config.js. That way, when you update, you only have to restore the line that include your file.
+- Multi-column Paragraph
+- Center-Aligned Paragraph
+- Always-On Drawer
+- Vertical Right-to-Left Paragraph
+- Custom Container
+
+## License
+[MIT](https://github.com/hieuthi/joplin-plugin-container-with-classes/LICENSE)

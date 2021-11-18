@@ -1,12 +1,12 @@
 {
 	"manifest_version": 1,
-	"id": "com.hieuthi.joplin.markdown-it-container",
+	"id": "com.hieuthi.joplin.container-with-classes",
 	"app_min_version": "2.2",
 	"version": "1.0.0",
-	"name": "Markdown-it Container",
-	"description": "Joplin wrapper for markdown-it-container plugin which supports creating custom containers",
+	"name": "Container with Classes",
+	"description": "Plugin for creating block-level containers with classes for customization",
 	"author": "Hieu-Thi Luong",
-	"homepage_url": "https://github.com/hieuthi/joplin-plugin-markdown-it-container",
-	"repository_url": "https://github.com/hieuthi/joplin-plugin-markdown-it-container",
+	"homepage_url": "https://github.com/hieuthi/joplin-plugin-container-with-classes",
+	"repository_url": "https://github.com/hieuthi/joplin-plugin-container-with-classes",
 	"keywords": ["joplin-plugin", "markdown-it", "container", "div", "css"]
 }
