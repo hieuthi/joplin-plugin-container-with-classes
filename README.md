@@ -31,10 +31,10 @@ Parent text
 **Why do you want to use this plugin instead of directly write html tag?**
 Because, you can't write markdown syntax within html. Using this plugin markdown text will be rendered as usual.
 
-![Examples](https://github.com/hieuthi/joplin-plugin-container-with-classes/docs/preview.png)
+![Examples](https://raw.githubusercontent.com/hieuthi/joplin-plugin-container-with-classes/main/docs/preview.png)
 
 There is no pre-defined class, you have to define them within the note or in `userstyle.css` yourself. 
-You can copy the content of [examples.md](https://github.com/hieuthi/joplin-plugin-container-with-classes/docs/examples.md) to joplin to see some simple examples. It includes:
+You can copy the content of [examples.md](https://raw.githubusercontent.com/hieuthi/joplin-plugin-container-with-classes/main/docs/examples.md) to joplin to see some simple examples. It includes:
 
 - Multi-column Paragraph
 - Center-Aligned Paragraph
@@ -43,4 +43,4 @@ You can copy the content of [examples.md](https://github.com/hieuthi/joplin-plug
 - Custom Container
 
 ## License
-[MIT](https://github.com/hieuthi/joplin-plugin-container-with-classes/LICENSE)
+[MIT](https://raw.githubusercontent.com/hieuthi/joplin-plugin-container-with-classes/main/LICENSE)
