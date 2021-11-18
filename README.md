@@ -15,7 +15,7 @@ which will be rendered as follow:
 </div>
 ```
 
-For nested div the parent need to have more ":" than chils:
+For nested div the parent need to have more ":" than childs:
 ```
 :::::: parentclass
 
@@ -29,7 +29,7 @@ Parent text
 ```
 
 **Why do you want to use this plugin instead of directly write html tag?**
-Because, you can't write markdown syntax within html. Using this plugin markdown text will be rendered as usual.
+It is markdown-like
 
 ![Examples](https://raw.githubusercontent.com/hieuthi/joplin-plugin-container-with-classes/main/docs/preview.png)
 
